@@ -3,158 +3,90 @@
 <head>
   <meta charset="UTF-8">
   <title>tabela Tkachuk</title>
-  <style>
-    /* cała tabela: czerwona gruba ramka, wspólne ramki komórek */
-    table {
-      border-collapse: collapse;
-      width: 17cm;
-      table-layout: fixed;
-      border: 2.5pt solid #c00000;
-    }
-    td {
-      border: 0.5pt solid #1a237e;
-      padding: 0.106cm 0.176cm;
-      vertical-align: middle;
-    }
-
-    /* tytuł tabeli (wiersz scalony na 6 kolumn) */
-    .tytul {
-      background-color: #ffffff;
-      text-align: center;
-      color: #000000;
-      font-family: "Times New Roman", serif;
-      font-size: 18pt;
-      font-weight: bold;
-    }
-
-    /* nagłówki kolumn */
-    .naglowek {
-      background-color: #1a237e;
-      text-align: center;
-      color: #ffffff;
-      font-family: Arial, sans-serif;
-      font-size: 11pt;
-      font-weight: bold;
-    }
-
-    /* kolumny z danymi */
-    .model     { text-align: left;   color: #8b0000; font-family: "Times New Roman", serif; font-size: 13pt; }
-    .predkosc  { text-align: center; color: #0b3d91; font-family: Arial, sans-serif;        font-size: 11pt; }
-    .pamiec    { text-align: right;  color: #1b5e20; font-family: "Times New Roman", serif; font-size: 12pt; }
-    .generacja { text-align: center; color: #4a148c; font-family: Arial, sans-serif;        font-size: 10pt; font-weight: bold; }
-    .cena      { text-align: right;  color: #bf360c; font-family: "Times New Roman", serif; font-size: 12pt; }
-    .status    { text-align: center; color: #004d40; font-family: Arial, sans-serif;        font-size: 14pt; }
-
-    /* stopka tabeli (wiersz scalony na 6 kolumn) */
-    .stopka {
-      background-color: #263238;
-      text-align: center;
-      color: #ffffff;
-      font-family: "Times New Roman", serif;
-      font-size: 13pt;
-    }
-
-    /* tekst pod tabelą */
-    .zrodlo {
-      margin-top: 0.423cm;
-      margin-bottom: 0;
-      color: #ff0000;
-      font-family: "Times New Roman", serif;
-      font-size: 24pt;
-      font-style: italic;
-      text-decoration: underline;
-    }
-  </style>
 </head>
 <body>
 
-<table>
-  <!-- szerokości kolumn -->
+<table style="border-collapse:collapse;width:17cm;table-layout:fixed;border:2.5pt solid #c00000;border-top:0.5pt solid #1a237e;">
+
+  <caption style="background-color:#ffffff;color:#000000;font-family:'Times New Roman',serif;font-size:18pt;font-weight:bold;text-align:center;padding:0.106cm 0.176cm;border:2.5pt solid #c00000;border-bottom:0.5pt solid #1a237e;">Dane pamięci RAM – Tkachuk Mykhailo 1p gr2</caption>
+
   <colgroup>
-    <col style="width: 3.881cm;">
-    <col style="width: 2.646cm;">
-    <col style="width: 2.293cm;">
-    <col style="width: 2.644cm;">
-    <col style="width: 2.471cm;">
-    <col style="width: 3.066cm;">
+    <col style="width:3.881cm;">
+    <col style="width:2.646cm;">
+    <col style="width:2.293cm;">
+    <col style="width:2.644cm;">
+    <col style="width:2.471cm;">
+    <col style="width:3.066cm;">
   </colgroup>
 
-  <!-- tytuł: jedna komórka scalona na 6 kolumn -->
-  <tr>
-    <td class="tytul" colspan="6">Dane pamięci RAM – Tkachuk Mykhailo 1p gr2</td>
-  </tr>
+  <thead>
+    <tr style="background-color:#1a237e;">
+      <th style="background-color:#1a237e;color:#ffffff;font-family:Arial,sans-serif;font-size:11pt;font-weight:bold;text-align:center;border:0.5pt solid #1a237e;padding:0.106cm 0.176cm;vertical-align:middle;">Model</th>
+      <th style="background-color:#1a237e;color:#ffffff;font-family:Arial,sans-serif;font-size:11pt;font-weight:bold;text-align:center;border:0.5pt solid #1a237e;padding:0.106cm 0.176cm;vertical-align:middle;">Prędkość</th>
+      <th style="background-color:#1a237e;color:#ffffff;font-family:Arial,sans-serif;font-size:11pt;font-weight:bold;text-align:center;border:0.5pt solid #1a237e;padding:0.106cm 0.176cm;vertical-align:middle;">Pamięć</th>
+      <th style="background-color:#1a237e;color:#ffffff;font-family:Arial,sans-serif;font-size:11pt;font-weight:bold;text-align:center;border:0.5pt solid #1a237e;padding:0.106cm 0.176cm;vertical-align:middle;">Generacja</th>
+      <th style="background-color:#1a237e;color:#ffffff;font-family:Arial,sans-serif;font-size:11pt;font-weight:bold;text-align:center;border:0.5pt solid #1a237e;padding:0.106cm 0.176cm;vertical-align:middle;">Cena</th>
+      <th style="background-color:#1a237e;color:#ffffff;font-family:Arial,sans-serif;font-size:11pt;font-weight:bold;text-align:center;border:0.5pt solid #1a237e;padding:0.106cm 0.176cm;vertical-align:middle;">Status</th>
+    </tr>
+  </thead>
+  <tbody>
 
-  <!-- nagłówki kolumn -->
-  <tr>
-    <td class="naglowek">Model</td>
-    <td class="naglowek">Prędkość</td>
-    <td class="naglowek">Pamięć</td>
-    <td class="naglowek">Generacja</td>
-    <td class="naglowek">Cena</td>
-    <td class="naglowek">Status</td>
-  </tr>
+    <tr style="background-color:#ffe0e0;">
+      <td style="text-align:left;color:#8b0000;font-family:'Times New Roman',serif;font-size:13pt;border:0.5pt solid #1a237e;padding:0.106cm 0.176cm;vertical-align:middle;">Corsair Vengeance</td>
+      <td style="text-align:center;color:#0b3d91;font-family:Arial,sans-serif;font-size:11pt;border:0.5pt solid #1a237e;padding:0.106cm 0.176cm;vertical-align:middle;">3600 MHz</td>
+      <td style="text-align:right;color:#1b5e20;font-family:'Times New Roman',serif;font-size:12pt;border:0.5pt solid #1a237e;padding:0.106cm 0.176cm;vertical-align:middle;">8 GB</td>
+      <td style="text-align:center;color:#4a148c;font-family:Arial,sans-serif;font-size:10pt;font-weight:bold;border:0.5pt solid #1a237e;padding:0.106cm 0.176cm;vertical-align:middle;">DDR4</td>
+      <td style="text-align:right;color:#bf360c;font-family:'Times New Roman',serif;font-size:12pt;border:0.5pt solid #1a237e;padding:0.106cm 0.176cm;vertical-align:middle;">150 zł</td>
+      <td rowspan="2" style="background-color:#579d1c;text-align:center;color:#004d40;font-family:Arial,sans-serif;font-size:14pt;border:0.5pt solid #1a237e;padding:0.106cm 0.176cm;vertical-align:middle;">Stary</td>
+    </tr>
+    <tr style="background-color:#e0f0ff;">
+      <td style="text-align:left;color:#8b0000;font-family:'Times New Roman',serif;font-size:13pt;border:0.5pt solid #1a237e;padding:0.106cm 0.176cm;vertical-align:middle;">Kingston Fury</td>
+      <td style="text-align:center;color:#0b3d91;font-family:Arial,sans-serif;font-size:11pt;border:0.5pt solid #1a237e;padding:0.106cm 0.176cm;vertical-align:middle;">3600 MHz</td>
+      <td style="text-align:right;color:#1b5e20;font-family:'Times New Roman',serif;font-size:12pt;border:0.5pt solid #1a237e;padding:0.106cm 0.176cm;vertical-align:middle;">16 GB</td>
+      <td style="text-align:center;color:#4a148c;font-family:Arial,sans-serif;font-size:10pt;font-weight:bold;border:0.5pt solid #1a237e;padding:0.106cm 0.176cm;vertical-align:middle;">DDR4</td>
+      <td style="text-align:right;color:#bf360c;font-family:'Times New Roman',serif;font-size:12pt;border:0.5pt solid #1a237e;padding:0.106cm 0.176cm;vertical-align:middle;">280 zł</td>
+    </tr>
+    <tr style="background-color:#e6ffe0;">
+      <td style="text-align:left;color:#8b0000;font-family:'Times New Roman',serif;font-size:13pt;border:0.5pt solid #1a237e;padding:0.106cm 0.176cm;vertical-align:middle;">G.Skill Trident Z</td>
+      <td style="text-align:center;color:#0b3d91;font-family:Arial,sans-serif;font-size:11pt;border:0.5pt solid #1a237e;padding:0.106cm 0.176cm;vertical-align:middle;">4000 MHz</td>
+      <td style="text-align:right;color:#1b5e20;font-family:'Times New Roman',serif;font-size:12pt;border:0.5pt solid #1a237e;padding:0.106cm 0.176cm;vertical-align:middle;">32 GB</td>
+      <td style="text-align:center;color:#4a148c;font-family:Arial,sans-serif;font-size:10pt;font-weight:bold;border:0.5pt solid #1a237e;padding:0.106cm 0.176cm;vertical-align:middle;">DDR4</td>
+      <td style="text-align:right;color:#bf360c;font-family:'Times New Roman',serif;font-size:12pt;border:0.5pt solid #1a237e;padding:0.106cm 0.176cm;vertical-align:middle;">520 zł</td>
+      <td style="background-color:#83caff;text-align:center;color:#004d40;font-family:Arial,sans-serif;font-size:14pt;border:0.5pt solid #1a237e;padding:0.106cm 0.176cm;vertical-align:middle;">Nowy</td>
+    </tr>
+    <tr style="background-color:#fff5cc;">
+      <td style="text-align:left;color:#8b0000;font-family:'Times New Roman',serif;font-size:13pt;border:0.5pt solid #1a237e;padding:0.106cm 0.176cm;vertical-align:middle;">Crucial Ballistix</td>
+      <td style="text-align:center;color:#0b3d91;font-family:Arial,sans-serif;font-size:11pt;border:0.5pt solid #1a237e;padding:0.106cm 0.176cm;vertical-align:middle;">3000 MHz</td>
+      <td style="text-align:right;color:#1b5e20;font-family:'Times New Roman',serif;font-size:12pt;border:0.5pt solid #1a237e;padding:0.106cm 0.176cm;vertical-align:middle;">16 GB</td>
+      <td style="text-align:center;color:#4a148c;font-family:Arial,sans-serif;font-size:10pt;font-weight:bold;border:0.5pt solid #1a237e;padding:0.106cm 0.176cm;vertical-align:middle;">DDR4</td>
+      <td style="text-align:right;color:#bf360c;font-family:'Times New Roman',serif;font-size:12pt;border:0.5pt solid #1a237e;padding:0.106cm 0.176cm;vertical-align:middle;">250 zł</td>
+      <td style="background-color:#ff950e;text-align:center;color:#004d40;font-family:Arial,sans-serif;font-size:14pt;border:0.5pt solid #1a237e;padding:0.106cm 0.176cm;vertical-align:middle;">Stary</td>
+    </tr>
+    <tr style="background-color:#f0e0ff;">
+      <td style="text-align:left;color:#8b0000;font-family:'Times New Roman',serif;font-size:13pt;border:0.5pt solid #1a237e;padding:0.106cm 0.176cm;vertical-align:middle;">Patriot Viper Steel</td>
+      <td style="text-align:center;color:#0b3d91;font-family:Arial,sans-serif;font-size:11pt;border:0.5pt solid #1a237e;padding:0.106cm 0.176cm;vertical-align:middle;">3600 MHz</td>
+      <td style="text-align:right;color:#1b5e20;font-family:'Times New Roman',serif;font-size:12pt;border:0.5pt solid #1a237e;padding:0.106cm 0.176cm;vertical-align:middle;">8 GB</td>
+      <td style="text-align:center;color:#4a148c;font-family:Arial,sans-serif;font-size:10pt;font-weight:bold;border:0.5pt solid #1a237e;padding:0.106cm 0.176cm;vertical-align:middle;">DDR4</td>
+      <td style="text-align:right;color:#bf360c;font-family:'Times New Roman',serif;font-size:12pt;border:0.5pt solid #1a237e;padding:0.106cm 0.176cm;vertical-align:middle;">140 zł</td>
+      <td style="background-color:#c5000b;text-align:center;color:#004d40;font-family:Arial,sans-serif;font-size:14pt;border:0.5pt solid #1a237e;padding:0.106cm 0.176cm;vertical-align:middle;">Stary</td>
+    </tr>
+    <tr style="background-color:#ffe8cc;">
+      <td style="text-align:left;color:#8b0000;font-family:'Times New Roman',serif;font-size:13pt;border:0.5pt solid #1a237e;padding:0.106cm 0.176cm;vertical-align:middle;">HyperX Predator</td>
+      <td style="text-align:center;color:#0b3d91;font-family:Arial,sans-serif;font-size:11pt;border:0.5pt solid #1a237e;padding:0.106cm 0.176cm;vertical-align:middle;">3200 MHz</td>
+      <td style="text-align:right;color:#1b5e20;font-family:'Times New Roman',serif;font-size:12pt;border:0.5pt solid #1a237e;padding:0.106cm 0.176cm;vertical-align:middle;">16 GB</td>
+      <td style="text-align:center;color:#4a148c;font-family:Arial,sans-serif;font-size:10pt;font-weight:bold;border:0.5pt solid #1a237e;padding:0.106cm 0.176cm;vertical-align:middle;">DDR4</td>
+      <td style="text-align:right;color:#bf360c;font-family:'Times New Roman',serif;font-size:12pt;border:0.5pt solid #1a237e;padding:0.106cm 0.176cm;vertical-align:middle;">320 zł</td>
+      <td style="background-color:#ffd320;text-align:center;color:#004d40;font-family:Arial,sans-serif;font-size:14pt;border:0.5pt solid #1a237e;padding:0.106cm 0.176cm;vertical-align:middle;">Nowy</td>
+    </tr>
 
-  <!-- Corsair Vengeance + Kingston Fury: wspólny status "Stary" (rowspan="2") -->
-  <tr style="background-color: #ffe0e0;">
-    <td class="model">Corsair Vengeance</td>
-    <td class="predkosc">3600 MHz</td>
-    <td class="pamiec">8 GB</td>
-    <td class="generacja">DDR4</td>
-    <td class="cena">150 zł</td>
-    <td class="status" rowspan="2" style="background-color: #579d1c;">Stary</td>
-  </tr>
-  <tr style="background-color: #e0f0ff;">
-    <td class="model">Kingston Fury</td>
-    <td class="predkosc">3600 MHz</td>
-    <td class="pamiec">16 GB</td>
-    <td class="generacja">DDR4</td>
-    <td class="cena">280 zł</td>
-  </tr>
-
-  <tr style="background-color: #e6ffe0;">
-    <td class="model">G.Skill Trident Z</td>
-    <td class="predkosc">4000 MHz</td>
-    <td class="pamiec">32 GB</td>
-    <td class="generacja">DDR4</td>
-    <td class="cena">520 zł</td>
-    <td class="status" style="background-color: #83caff;">Nowy</td>
-  </tr>
-
-  <tr style="background-color: #fff5cc;">
-    <td class="model">Crucial Ballistix</td>
-    <td class="predkosc">3000 MHz</td>
-    <td class="pamiec">16 GB</td>
-    <td class="generacja">DDR4</td>
-    <td class="cena">250 zł</td>
-    <td class="status" style="background-color: #ff950e;">Stary</td>
-  </tr>
-
-  <tr style="background-color: #f0e0ff;">
-    <td class="model">Patriot Viper Steel</td>
-    <td class="predkosc">3600 MHz</td>
-    <td class="pamiec">8 GB</td>
-    <td class="generacja">DDR4</td>
-    <td class="cena">140 zł</td>
-    <td class="status" style="background-color: #c5000b;">Stary</td>
-  </tr>
-
-  <tr style="background-color: #ffe8cc;">
-    <td class="model">HyperX Predator</td>
-    <td class="predkosc">3200 MHz</td>
-    <td class="pamiec">16 GB</td>
-    <td class="generacja">DDR4</td>
-    <td class="cena">320 zł</td>
-    <td class="status" style="background-color: #ffd320;">Nowy</td>
-  </tr>
-
-  <!-- stopka: jedna komórka scalona na 6 kolumn -->
-  <tr>
-    <td class="stopka" colspan="6">Dane pamięci RAM</td>
-  </tr>
+    <tr>
+      <td colspan="6" style="background-color:#263238;color:#ffffff;text-align:center;font-family:'Times New Roman',serif;font-size:13pt;border:0.5pt solid #1a237e;padding:0.106cm 0.176cm;vertical-align:middle;">Dane pamięci RAM</td>
+    </tr>
+  </tbody>
 </table>
 
-<!-- tekst pod tabelą -->
-<p class="zrodlo">Źródło: Tkachuk Mykhailo</p>
+
+<p style="margin-top:0.423cm;margin-bottom:0;color:#ff0000;font-family:'Times New Roman',serif;font-size:24pt;font-style:italic;text-decoration:underline;">Źródło: Tkachuk Mykhailo</p>
 
 </body>
 </html>
