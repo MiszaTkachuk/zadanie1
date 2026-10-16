@@ -17,7 +17,7 @@
                                <br><br>  
                              <b>Nazwisko </b> &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp <input name="nazwisko" size="22">  
                                <br><br> 
-                             <b>Adres Zamieszkania</b> &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp<input name="adres" size="22"><nobr> 
+                             <b>Adres Zamieszkania</b> &nbsp<input name="adres" size="22"><nobr> 
 <br>  
                            </TD>
     <TD width="300" >  
@@ -52,15 +52,23 @@
  <br><br> 
  <input type="radio" name="pyt3" value="nie"> Angielski   
 <br><br> 
- <input type="radio" name="pyt3" value="tak"> Niemiecki 
+ <input type="radio" name="pyt3" value="tak"> Niemiecki
+<br><br>
 <input type="radio" name="pyt3" value="tak"> Inny <input name="imie" size="22"> 
                             <br> <br> <b> W polu poniżej <br>Napisz kilka zdań o sobie</b>  <textarea cols="50" rows="4"></textarea>     </TD>  
                           <TD>podaj czas  &nbsp &nbsp &nbsp &nbsp<input type="time"><br>  
                               podaj datę  &nbsp &nbsp &nbsp&nbsp &nbsp<input type="date"> <br>    
                               wybierz kolor  &nbsp &nbsp<input type="color"> <br>   </TD>  
-                          <TD>  jaka jest wilgotność   <input type="range"> <br> 
-                                 Proszę czekać...&nbsp &nbsp &nbsp &nbsp <progress>Proszę 
-czekać...</progress>            </TD> 
+                          <TD width="300" >  
+<center><font size="5" color="red"><b>Wybierz dzień w który chcesz mieć zajęcia</b></font></center><br> 
+                            <center>  <select> 
+                                 <option value="Poniedziałek">Poniedziałek</option> 
+                                 <option value="Wtorek">Wtorek</option> 
+                                 <option value="Środa">Środa</option> 
+                                 <option value="Czwartek">Czwartek</option> 
+                                 <option value="Piątek">Piątek</option>
+                              </select> </center> 
+                           </TD>
         </TR> 
   <TR height="100"> 
            <TD><button onclick="alert('A kuku')" style="height:80px;width:300px">Przycisk 
