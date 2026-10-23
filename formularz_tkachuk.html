@@ -8,75 +8,102 @@
 <body> 
 <h1>Poniżej jest formularz</h1><br>
   <body bgcolor="#87CEFA"> 
-<center><h1>Zapisy na zajęcia poza lekcyjne</h1></center> 
-<form enctype="text/plain" action="mailto:mkryniew@wp.pl" subject="formularz_dane" method="Post"> 
-  <TABLE> 
- <TR height="100"> 
-                          <TD width="500">  
-   <p align="left"><b>Imię</b> &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp<input name="imie" size="22"> </p>   
-   <p align="center"> <b>Nazwisko </b> &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp <input name="nazwisko" size="22"> </p>  
-                               <br><br> 
-                             <b>Adres Zamieszkania</b> &nbsp<input name="adres" size="22"><nobr> 
-<br>  
-                           </TD>
-    <TD width="300" >  
-<center><font size="5" color="red"><b>Wybierz zajęcia</b></font></center><br> 
-                            <center>  <select> 
-                                 <option value="Koszykówka">Koszykówka</option> 
-                                 <option value="Szachy">Szachy</option> 
-                                 <option value="Pływanie">Pływanie</option> 
-                                 <option value="Piłka">Piłka nożna</option> 
-                                 <option value="Siłownia">Siłownia</option> 
-                                 <option value="siatkówka">siatkówka</option> 
-                              </select> </center> 
-                           </TD>  
-                          <TD width="500">Twoje zainteresowania <br><br> 
- <input type="checkbox" name="ciastko" value="k"> Sport 
- <br><br> 
- <input type="checkbox" name="ciastko" value="m"> Muzyka
- <br><br> 
- <input type="checkbox" name="ciastko" value="inna"> Inne 
- <br><br><br> 
+<title>Zapisy na zajęcia pozalekcyjne</title>
+</head>
+<body>
  
- <nobr>Jeśli zaznaczyłeś INNE to podaj swoje zaintertesiwanie<br>wpisz zainteresowanie poniżej. Maks: 
-100 znaków(zależnie od zainteresowania można się dogadać o inne w pytaniu po lewej)</nobr> 
- <br><br> 
- <input name="inna" size="25" maxlength="100"> 
-  </TD> 
-        </TR> 
- <TR height="200"> 
-                          <TD><nobr>W którym języku chcesz mieć zajęcia?</nobr> 
- <br><br> 
- <input type="radio" name="pyt3" value="tak"> Polski 
- <br><br> 
- <input type="radio" name="pyt3" value="nie"> Angielski   
-<br><br> 
- <input type="radio" name="pyt3" value="tak"> Niemiecki
+<center><h1>Zapisy na zajęcia pozalekcyjne</h1></center>
+ 
+<form action="mailto:twoj@email.pl" method="post" enctype="text/plain">
+ 
+<table>
+  <tr>
+    <td><b>Imię</b> <input name="imie" size="25"></td>
+    <td><b>Nazwisko</b> <input name="nazwisko" size="25"></td>
+  </tr>
+  <tr>
+    <td colspan="2"><b>Adres Zamieszkania</b> <input name="adres" size="50"></td>
+  </tr>
+</table>
+ 
+<br>
+ 
+<table border="1" width="800">
+  <tr height="200">
+    <td width="400" valign="top">
+      <font size="5">Twoje zainteresowania</font><br><br>
+      <input type="checkbox" name="zainteresowania" value="sport"> Sport<br>
+      <input type="checkbox" name="zainteresowania" value="muzyka"> Muzykę<br>
+      <input type="checkbox" name="zainteresowania" value="inne"> Inne (napisz swoje)<br><br>
+      <input name="inne_zainteresowania" size="30">
+    </td>
+    <td width="400" valign="top">
+      <font size="5">W którym języku chcesz mieć zajęcia</font><br><br>
+      <input type="radio" name="jezyk" value="polski"> Polski<br>
+      <input type="radio" name="jezyk" value="angielski"> Angielski<br>
+      <input type="radio" name="jezyk" value="niemiecki"> Niemiecki<br>
+      <input type="radio" name="jezyk" value="inny"> Inny <input name="inny_jezyk" size="20">
+    </td>
+  </tr>
+ 
+  <tr height="250">
+    <td valign="top">
+      <font size="5">Napisz kilka zdań o sobie</font><br><br>
+      <textarea name="o_sobie" cols="40" rows="8">Napisz tutaj tekst o sobie</textarea>
+    </td>
+    <td valign="top">
+      <font size="5">Z której klasy jesteś?</font><br><br>
+      <select name="klasa">
+        <option value="">Wybierz</option>
+        <option value="1">1</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+        <option value="4">4</option>
+      </select>
+      <br><br><br>
+      <font size="5">Wybierz zajęcia:</font><br><br>
+      <select name="zajecia" size="3">
+        <option value="Koszykówka">Koszykówka</option>
+        <option value="Szachy">Szachy</option>
+        <option value="Pływanie">Pływanie</option>
+      </select>
+    </td>
+  </tr>
+ 
+  <tr height="200">
+    <td valign="top">
+      <font size="5">Napisz swój PESEL (max 11 znaków)</font><br><br>
+      <input name="pesel" size="15" maxlength="11">
+    </td>
+    <td valign="top">
+      <font size="5">Wybierz dzień:</font><br><br>
+      <select name="dzien" size="3">
+        <option value="Poniedziałek">Poniedziałek</option>
+        <option value="Wtorek">Wtorek</option>
+        <option value="Środa">Środa</option>
+      </select>
+    </td>
+  </tr>
+</table>
+ 
 <br><br>
-<input type="radio" name="pyt3" value="tak"> Inny <input name="imie" size="22"> 
-                            <br> <br> <b> W polu poniżej <br>Napisz kilka zdań o sobie</b>  <textarea cols="50" rows="4"></textarea>     </TD>  
-                          <TD>podaj czas  &nbsp &nbsp &nbsp &nbsp<input type="time"><br>  
-                              podaj datę  &nbsp &nbsp &nbsp&nbsp &nbsp<input type="date"> <br>    
-                              wybierz kolor  &nbsp &nbsp<input type="color"> <br>   </TD>  
-                          <TD width="300" >  
-<center><font size="5" color="red"><b>Wybierz dzień w który chcesz mieć zajęcia</b></font></center><br> 
-                            <center>  <select> 
-                                 <option value="Poniedziałek">Poniedziałek</option> 
-                                 <option value="Wtorek">Wtorek</option> 
-                                 <option value="Środa">Środa</option> 
-                                 <option value="Czwartek">Czwartek</option> 
-                                 <option value="Piątek">Piątek</option>
-                              </select> </center> 
-                           </TD>
-        </TR> 
-  <TR height="100"> 
-           <TD><button onclick="alert('A kuku')" style="height:80px;width:300px">Przycisk 
-niespodzianka</button></TD>  
-           <TD><nobr><input type="reset" value="Reset" style="height:80px; width:150px">                    
-</TD>  
-           <TD> <input type="submit" value"=Wyślij formularz" style="height:80px; width:150px"> </TD> 
-        </TR> 
-  </TABLE> 
+ 
+<table>
+  <tr>
+    <td><b>Hasło</b> <input type="password" name="haslo" size="20"></td>
+    <td width="40"></td>
+    <td><input type="submit" value="Wyślij" style="height:50px; width:120px"></td>
+    <td><input type="reset" value="Wyczyść" style="height:50px; width:120px"></td>
+    <td width="40"></td>
+    <td>
+      <table border="1">
+        <tr><td><input type="button" value="Regulamin" style="width:120px"></td></tr>
+        <tr><td><input type="button" value="Pomoc" style="width:120px"></td></tr>
+      </table>
+    </td>
+  </tr>
+</table>
+ 
 </form>
 
 <A HREF="index.html"><h2>Wróć </h2></A><br>
